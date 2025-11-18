@@ -44,7 +44,7 @@ x[1]
 ```
 
 
-THe c function can be seen as a creative function or, more accurately, as a vector concatenation function 
+The c function can be seen as a creative function or, more accurately, as a vector concatenation function 
 
 ```{r}
 y <- c(1, -2, 45, 1.5, -1e-10) # concatenation of multiple vectors (of 1 element)
@@ -110,7 +110,7 @@ y
 Therefore, modifying x has no effect on y
 
 
-Indexing is made with vectors of any length
+Indexing is made with vectors of any length.
 
 ```{r}
 x
