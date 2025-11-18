@@ -5,6 +5,9 @@ format: html
 editor: visual
 ---
 
+test
+
+
 ## Types and Classes
 
 ### Types
@@ -99,7 +102,7 @@ x
 y<-x
 y
 ```
-Assignemtn can be understood as a value semanti assignment x and y are different vectors with the same initial content.
+Assignement can be understood as a value semanti assignment x and y are different vectors with the same initial content.
 ```{r}
 x[1]<-18
 x
@@ -139,8 +142,11 @@ broken
 typeof(broken)
 ```
 
-Vectors must  be type uniforme, which will trigger a conversion to character in many cases. 
+Vectors must  be type uniform, which will trigger a conversion to character in many cases. 
 
 Lists do not have this limitation.
 
 ### Creating  a list
+
+
+
