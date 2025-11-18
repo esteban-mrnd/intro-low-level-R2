@@ -49,6 +49,38 @@ typeof(y)
 y[2]
 length(y)
 ```
+### Character vectors
+
+```{r}
+z <- "Alice"
+length(z)
+```
+
+
+Salvation comes from 'stringr' package
+
+```{r}
+library(stringr)
+```
+
+```{r}
+str_length(z)
+```
+
+```{r}
+complicated <- '☀️😎'
+complicated
+length(complicated)
+str_length(complicated)
+```
+```{r}
+some_values <- c('☀️😎')
+some_values
+length(some_values)
+str_length(some_values)
+str_to_kebab('test FJIEOAF')
+```
+
 
 
 
