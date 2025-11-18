@@ -1,0 +1,87 @@
+---
+title: "Introduction to Low Level R"
+author: "Louise Cazalet"
+format: html
+editor: visual
+---
+
+
+## Types and Classes
+
+### Types
+
+```{r}
+typeof(1.5)
+typeof("toto")
+typeof('between single quotes')
+typeof(TRUE)
+typeof(1L)
+typeof(1)
+typeof(typeof)
+typeof(list())
+```
+### Classes
+
+```{r}
+data(iris)
+typeof(iris)
+class(iris)
+```
+## Vectors
+
+###Introduction 
+
+Many things in R are vectors (and most of the other thinkgs are lists)
+
+A vector is a collection of values of the same type (possibly a single value).
+
+```{r}
+x <- 15.25
+length(x) # all vectors have a length
+x[1]
+```
+
+
+THe c function can be seen as a creative function or, more accurately, as a vector concatenation function 
+
+```{r}
+y <- c(1, -2, 45, 1.5, -1e-10) # concatenation of multiple vectors (of 1 element)
+y
+typeof(y)
+y[2]
+length(y)
+```
+### Character vectors
+
+```{r}
+z <- "Alice"
+length(z)
+```
+
+
+Salvation comes from 'stringr' package
+
+```{r}
+library(stringr)
+```
+
+```{r}
+str_length(z)
+```
+
+```{r}
+complicated <- '☀️😎'
+complicated
+length(complicated)
+str_length(complicated)
+```
+```{r}
+some_values <- c('☀️😎')
+some_values
+length(some_values)
+str_length(some_values)
+```
+
+
+
+
