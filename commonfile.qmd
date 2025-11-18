@@ -19,6 +19,7 @@ typeof(1)
 typeof(typeof)
 typeof(list())
 ```
+
 ### Classes
 
 ```{r}
@@ -26,3 +27,108 @@ data(iris)
 typeof(iris)
 class(iris)
 ```
+
+
+## Vectors
+
+###Introduction 
+
+Many things in R are vectors (and most of the other thinkgs are lists)
+
+A vector is a collection of values of the same type (possibly a single value).
+
+```{r}
+x <- 15.25
+length(x) # all vectors have a length
+x[1]
+```
+
+
+THe c function can be seen as a creative function or, more accurately, as a vector concatenation function 
+
+```{r}
+y <- c(1, -2, 45, 1.5, -1e-10) # concatenation of multiple vectors (of 1 element)
+y
+typeof(y)
+y[2]
+length(y)
+```
+### Character vectors
+
+```{r}
+z <- "Alice"
+length(z)
+```
+
+
+Salvation comes from 'stringr' package
+
+```{r}
+library(stringr)
+```
+
+```{r}
+str_length(z)
+```
+
+```{r}
+complicated <- '☀️😎'
+complicated
+length(complicated)
+str_length(complicated)
+```
+```{r}
+some_values <- c('☀️😎')
+some_values
+length(some_values)
+str_length(some_values)
+```
+
+### Indexing
+
+```{r}
+x <- c(6,5,1,2,3,4)
+x[3]
+```
+```{r}
+x
+x[4] <- 4
+x
+```
+```{r}
+y<-x
+y
+```
+Assignemtn can be understood as a value semanti assignment x and y are different vectors with the same initial content.
+```{r}
+x[1]<-18
+x
+y
+```
+
+
+Therefore, modifying x has no effect on y
+
+
+Indexing is made with vectors of any length
+
+```{r}
+x
+x[c(2,2,1,4,3,4)]
+x
+```
+```{r}
+x[c(-1)]
+```
+
+
+```{r}
+y <- c('A','B','C')
+y <- c(TRUE, FALSE, TRUE)
+y
+```
+
+
+
+
+
